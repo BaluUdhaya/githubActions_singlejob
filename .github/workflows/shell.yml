@@ -1,0 +1,13 @@
+name: shellscript
+on: workflow_dispatch
+jobs:
+  shelljob:
+    runs-on: ubuntu-latest
+    steps:
+       - name: make a directory
+         run: mkdir balu
+       - name: create file and run
+         run: |
+           touch file1.sh
+           echo "hi there" >> file1.sh
+           ps -ef | grep bash  >> file1.sh
