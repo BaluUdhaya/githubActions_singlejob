@@ -4,9 +4,10 @@ jobs:
   myfirstjob:
     runs-on: ubuntu-latest
     steps:
-      -name: test shell
-       run: echo "hi there"
-      -name: test2
-       run: |
-         echo "hello"
-         echo"first script"
+      - name: test shell
+        run: echo "hi there"
+      - name: test2
+        run: |
+           echo "hello"
+           echo "first script"
+ 
